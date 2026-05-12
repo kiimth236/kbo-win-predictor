@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KBO-WIN-PREDICTOR</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="kiimth236@gmail.com">
+        <meta name="description" content="KBO 경기 승리 팀 예측">
+        <meta name="keywords" content="KBO, kbo, match, win, kbo-win-predictor">
+
+        <style>
+            body
+            {    
+                background-color: #111;
+                color: #ddd;
+                font-family: Arial, sans-serif;
+            }
+            .container
+            {
+                width: 1000px;
+                margin: auto;
+                padding-top: 50px;
+            }
+            .title
+            {
+                text-align: left;
+                font-size: 36px;
+                font-weight: bold;
+
+                background: linear-gradient(to right, red, blue);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: inline-block;
+            }
+            hr
+            {
+                border: 1px solid #444;
+            }
+            fieldset
+            {
+                border: 3px solid #555;
+            }
+            .team-table
+            {
+                width: 100%;
+            }
+            .line-up td
+            {
+                width: 20%;
+                text-align: center;
+                padding: 10px;
+            }
+            .legend
+            {
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .MONTH
+            {
+                text-align: center;
+                padding: 10px;
+            }
+            .TEAM
+            {
+                text-align: center;
+                padding: 30px;
+            }
+            .VS
+            {
+                margin: 0 20px;
+            }
+            .ENTER
+            {
+                text-align: right;
+                padding: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <p id="top"></p>
+        <h3 class="title">KBO-MATCH</h3>
+
+        <br>
+        <hr>
+        <br>
+
+        <fieldset>
+            <legend class="legend">MATCH LINE-UP</legend>
+            <table class="team-table">
+                <tr class="line-up">
+                    <td>KT</td>
+                    <td>LG</td>
+                    <td>SSG</td>
+                    <td>삼성</td>
+                    <td>KIA</td>
+                </tr>
+                <tr class="line-up">
+                    <td>NC</td>
+                    <td>두산</td>
+                    <td>롯데</td>
+                    <td>한화</td>
+                    <td>키움</td>
+                </tr>
+            </table>
+        </fieldset>
+        
+        <br>
+
+        <fieldset>
+            <legend class="legend">MATCH-PREDICTOR</legend>
+            <div class="MONTH">
+                MONTH : 
+                <select>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+                월
+            </div>
+
+            <div class="TEAM">
+                <select id="TEAM1">
+                    <option disabled selected>TEAM1</option>
+                    <option value="0">KT</option>
+                    <option value="1">LG</option>
+                    <option value="2">SSG</option>
+                    <option value="3">삼성</option>
+                    <option value="4">KIA</option>
+                    <option value="5">NC</option>
+                    <option value="6">두산</option>
+                    <option value="7">롯데</option>
+                    <option value="8">한화</option>
+                    <option value="9">키움</option>
+                </select>
+
+                <span class="VS">VS</span>
+                
+                <select id="TEAM2">
+                    <option disabled selected>TEAM2</option>
+                    <option value="0">KT</option>
+                    <option value="1">LG</option>
+                    <option value="2">SSG</option>
+                    <option value="3">삼성</option>
+                    <option value="4">KIA</option>
+                    <option value="5">NC</option>
+                    <option value="6">두산</option>
+                    <option value="7">롯데</option>
+                    <option value="8">한화</option>
+                    <option value="9">키움</option>
+                </select>
+            </div>
+
+            <div class="ENTER">
+                <input type="submit" value="결과 확인하기">
+            </div>
+        </fieldset>
+        <a href="#top">[위로]</a>
+        </div>
+    </body>
+</html>
