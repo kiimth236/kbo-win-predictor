@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KBO-WIN-PREDICTOR</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="kiimth236@gmail.com">
+        <meta name="description" content="KBO 경기 승리 팀 예측">
+        <meta name="keywords" content="KBO, kbo, match, win, kbo-win-predictor">
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- 화면이 너무 퍼지지 않게 container로 묶음 -->
+        <p id="top"></p>
+        <div class="container">
+        <h3 class="title">KBO-MATCH</h3>
+
+        <br>
+        <hr>
+        <br>
+
+        <!-- LINE-UP을 보여줌 -->
+        <fieldset>
+            <legend>MATCH LINE-UP</legend>
+            <table class="team-table">
+                <tr class="line-up">
+                    <td><a href="https://www.ktwiz.co.kr/" target="_blank">KT</a></td>
+                    <td><a href="https://www.lgtwins.com/" target="_blank">LG</a></td>
+                    <td><a href="https://www.ssglanders.com/main" target="_blank">SSG</a></td>
+                    <td><a href="https://www.samsunglions.com/" target="_blank">삼성</a></td>
+                    <td><a href="https://tigers.co.kr/" target="_blank">KIA</a></td>
+                </tr>
+                <tr class="line-up">
+                    <td><a href="https://www.ncdinos.com/" target="_blank">NC</a></td>
+                    <td><a href="https://www.doosanbears.com/" target="_blank">두산</a></td>
+                    <td><a href="https://www.giantsclub.com/m/" target="_blank">롯데</a></td>
+                    <td><a href="https://www.hanwhaeagles.co.kr/index.do" target="_blank">한화</a></td>
+                    <td><a href="https://heroesbaseball.co.kr/index.do" target="_blank">키움</a></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+        <br>
+
+        <!-- 실제 예측 부분 구현 -->
+        <fieldset>
+            <legend class="predictor">MATCH-PREDICTOR</legend>
+            <!-- MONTH 선택 -->
+            <div class="MONTH">
+                MONTH : 
+                <select>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+                월
+            </div>
+
+            <!-- TEAM 선택 -->
+            <div class="TEAM">
+                <select id="TEAM1">
+                    <option disabled selected>TEAM1</option>
+                    <option value="01">KT</option>
+                    <option value="02">LG</option>
+                    <option value="03">SSG</option>
+                    <option value="04">삼성</option>
+                    <option value="05">KIA</option>
+                    <option value="06">NC</option>
+                    <option value="07">두산</option>
+                    <option value="08">롯데</option>
+                    <option value="09">한화</option>
+                    <option value="10">키움</option>
+                </select>
+
+                <span class="VS">VS</span>
+                
+                <select id="TEAM2">
+                    <option disabled selected>TEAM2</option>
+                    <option value="01">KT</option>
+                    <option value="02">LG</option>
+                    <option value="03">SSG</option>
+                    <option value="04">삼성</option>
+                    <option value="05">KIA</option>
+                    <option value="06">NC</option>
+                    <option value="07">두산</option>
+                    <option value="08">롯데</option>
+                    <option value="09">한화</option>
+                    <option value="10">키움</option>
+                </select>
+            </div>
+
+            <!-- 선택값 제출 -->
+            <div class="ENTER">
+                <input type="submit" value="결과 확인하기">
+            </div>
+        </fieldset>
+
+        <br>
+
+        <!-- 결과 출력 -->
+        <fieldset  class="RESULT">
+            <legend class="RESULT">WINNER</legend>
+            <div class="winner">더 강한</div>
+            <div class="text">팀이 승리할 것 입니다!</div>
+        </fieldset>
+
+        <!-- 페이지 최상단으로 이동 -->
+        <div class="TOP"><a href="#top">[위로]</a></div>
+        </div>
+    </body>
+</html>

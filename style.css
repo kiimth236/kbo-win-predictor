@@ -1,0 +1,170 @@
+/*폰트 설정 및 애니메이션 효과 설정*/
+@font-face {
+    font-family: 'KBO-Bold';
+    src: url('font/KBO-Dia-Gothic_bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'KBO-Medium';
+    src: url('font/KBO-Dia-Gothic_medium.woff') format('woff');
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*배경색, 폰트, 글자색 변경*/
+body {
+    background-color: #111;
+    color: #ddd;
+    font-size: 16px;
+    font-family: 'KBO-Medium';
+}
+
+.container {
+    width: 450px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.title {
+    text-align: left;
+    font-size: 36px;
+    font-family: 'KBO-Bold';
+
+    background: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+hr {
+    border: 1px solid #444;
+}
+
+/* 공통 */
+fieldset {
+    border: 3px solid #555;
+}
+
+fieldset legend {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'KBO-Bold';
+}
+
+/* MATCH LINE-UP */
+.team-table {
+    width: 100%;
+}
+
+.line-up td {
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #ddd;
+}
+
+.line-up a {
+    text-decoration: none;
+    color: #ddd;
+
+    display: inline-block;
+    transition: 0.2s;
+}
+.line-up a:hover {
+    transform: scale(1.1);
+    color: #7f5cff;
+}
+
+/* MATCH-PREDICTOR */
+.MONTH {
+    text-align: center;
+    padding: 10px;
+}
+
+.TEAM {
+    text-align: center;
+    padding: 30px;
+}
+
+.VS {
+    margin: 0 20px;
+}
+
+.predictor {
+    animation: bounce 2s infinite;
+}
+
+.ENTER {
+    text-align: right;
+    padding: 10px;
+}
+
+.TOP {
+    text-align: right;
+    padding: 10px;
+}
+.TOP a {
+    text-decoration: none;
+    color: #555;
+}
+
+/* 셀렉트 옵션 변경 */
+select {
+    background-color: #1a1a1a;
+    color: #ddd;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-family: 'KBO-Medium';
+
+    transition: 0.2s;
+}
+select:focus {
+    transform: scale(1.05);
+}
+
+/*결과 확인하기 변경*/
+input {
+    background-color: #ddd;
+    border: none;
+    color: #111;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-family: 'KBO-Medium';
+    transition: 0.2s;
+}
+input:hover {
+    transform: scale(1.1);
+}
+
+/*WINNER*/
+.RESULT {
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, red, blue) 1;
+}
+
+.winner {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'KBO-Bold';
+}
+
+.text {
+    text-align: center;
+}
+
+
